@@ -268,13 +268,13 @@ extern class Nvg {
 
 
     @:native("::nvgCreateImage")
-    public static function createImage(_ctx:Pointer<NvgContext>, _filename:String):Int;
+    public static function createImage(_ctx:Pointer<NvgContext>, _filename:String, imageFlags:Int = 0):Int;
 
     @:native("::nvgCreateImageMem")
-    public static function createImageMem(_ctx:Pointer<NvgContext>, _data:cpp.Pointer<UInt8>, _ndata:Int):Int;
+    public static function createImageMem(_ctx:Pointer<NvgContext>, imageFlags:Int, _data:cpp.Pointer<UInt8>, _ndata:Int):Int;
 
     @:native("::nvgCreateImageRGBA")
-    public static function createImageRGBA(_ctx:Pointer<NvgContext>, _w:Int, _h:Int, _data:cpp.Pointer<UInt8>):Int;
+    public static function createImageRGBA(_ctx:Pointer<NvgContext>, _w:Int, _h:Int, imageFlags:Int, _data:cpp.Pointer<UInt8>):Int;
 
     @:native("::nvgUpdateImage")
     public static function updateImage(_ctx:Pointer<NvgContext>, _image:Int, _data:cpp.Pointer<UInt8>):Void;
