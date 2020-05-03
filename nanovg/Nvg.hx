@@ -296,7 +296,7 @@ extern class Nvg {
     public static function radialGradient(_ctx:Pointer<NvgContext>, _cx:Float, _cy:Float, _inr:Float, _outr:Float, _icol:NvgColor, _ocol:NvgColor):NvgPaint;
 
     @:native("::nvgImagePattern")
-    public static function imagePattern(_ctx:Pointer<NvgContext>, _ox:Float, _oy:Float, _ex:Float, _ey:Float, _angle:Float, _image:Int, _repeat:Int, _alpha:Float):NvgPaint;
+    public static function imagePattern(_ctx:Pointer<NvgContext>, _ox:Float, _oy:Float, _ex:Float, _ey:Float, _angle:Float, _image:Int, _alpha:Float):NvgPaint;
 
 
     @:native("::nvgScissor")
